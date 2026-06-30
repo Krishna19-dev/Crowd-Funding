@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create a new crowdfunding campaign on CrowdFunding. Share your idea and start raising funds.">
+    <title>Create Campaign - CrowdFunding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========================
+         NAVBAR
+         ======================== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Crowd<span>Funding</span></a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="campaigns.html">Campaigns</a></li>
+                <li><a href="create-campaign.html" class="active">Create Campaign</a></li>
+                <li><a href="login.html" class="btn btn-primary">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========================
+         PAGE HEADER
+         ======================== -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Create a Campaign</h1>
+            <p>Share your idea and start raising funds today.</p>
+        </div>
+    </section>
+
+    <!-- ========================
+         CREATE CAMPAIGN FORM
+         ======================== -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container" id="formContainer">
+
+                <!-- Form -->
+                <form id="campaignForm">
+                    <h2>Campaign Details</h2>
+                    <p>Fill in the details below to create your campaign.</p>
+
+                    <!-- Campaign Title -->
+                    <div class="form-group">
+                        <label for="campaignTitle">Campaign Title</label>
+                        <input type="text" id="campaignTitle" placeholder="Enter campaign title">
+                    </div>
+
+                    <!-- Category -->
+                    <div class="form-group">
+                        <label for="campaignCategory">Category</label>
+                        <select id="campaignCategory">
+                            <option value="">Select a category</option>
+                            <option value="education">Education</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="technology">Technology</option>
+                            <option value="environment">Environment</option>
+                            <option value="social">Social Impact</option>
+                            <option value="energy">Energy</option>
+                            <option value="animal">Animal Welfare</option>
+                        </select>
+                    </div>
+
+                    <!-- Goal Amount -->
+                    <div class="form-group">
+                        <label for="campaignGoal">Goal Amount (₹)</label>
+                        <input type="number" id="campaignGoal" placeholder="e.g. 500000">
+                    </div>
+
+                    <!-- Description -->
+                    <div class="form-group">
+                        <label for="campaignDescription">Description</label>
+                        <textarea id="campaignDescription" placeholder="Describe your campaign in detail..."></textarea>
+                    </div>
+
+                    <!-- Image URL -->
+                    <div class="form-group">
+                        <label for="campaignImage">Image URL (optional)</label>
+                        <input type="text" id="campaignImage" placeholder="https://example.com/image.jpg">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary">Create Campaign</button>
+                </form>
+
+                <!-- Success Message (shown after form submit) -->
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon">✅</div>
+                    <h3>Campaign Created!</h3>
+                    <p>Your campaign has been submitted successfully. It will be reviewed and published shortly.</p>
+                    <br>
+                    <a href="campaigns.html" class="btn btn-primary">View All Campaigns</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FOOTER
+         ======================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Crowd<span>Funding</span></div>
+                    <p>A simple crowdfunding platform to support innovative ideas and creative projects.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="campaigns.html">Campaigns</a></li>
+                        <li><a href="create-campaign.html">Create Campaign</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">contact@crowdfunding.com</a></li>
+                        <li><a href="#">+91 98765 43210</a></li>
+                        <li><a href="#">New Delhi, India</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 CrowdFunding. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

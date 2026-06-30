@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CrowdFunding - A simple crowdfunding platform to support innovative ideas and creative projects.">
+    <title>CrowdFunding - Fund Ideas That Matter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Crowd<span>Funding</span></a>
+
+            <!-- Hamburger Menu (Mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="campaigns.html">Campaigns</a></li>
+                <li><a href="create-campaign.html">Create Campaign</a></li>
+                <li><a href="login.html" class="btn btn-primary">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div>
+            <div class="hero-badge">
+                <div class="dot"></div>
+                AI-Powered · Fraud-Protected · Trust-Verified
+            </div>
+
+            <h1 class="hero-title">
+                Fund ideas that<br>actually<br><span class="accent">deserve it.</span>
+            </h1>
+
+            <p class="hero-desc">
+                FundAI uses artificial intelligence to help creators write better campaigns, protect backers from fraud, and surface projects truly worth backing.
+            </p>
+
+            <div class="hero-actions">
+                <button class="btn-hero" onclick="window.location.href='create-campaign.html'">Launch Your Campaign →</button>
+                <button class="btn-hero-outline" onclick="window.location.href='campaigns.html'">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                    Browse Campaigns
+                </button>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <div class="stat-value">₹4.2Cr</div>
+                    <div class="stat-label">Raised this month</div>
+                </div>
+                <div>
+                    <div class="stat-value">1,840</div>
+                    <div class="stat-label">Active campaigns</div>
+                </div>
+                <div>
+                    <div class="stat-value">94%</div>
+                    <div class="stat-label">Fraud detection rate</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <!-- Trust Score -->
+            <div class="trust-card">
+                <div class="trust-header">
+                    <span class="trust-title">Creator Trust Score</span>
+                    <span class="trust-pill">AI-Computed</span>
+                </div>
+                <div class="trust-ring-wrap">
+                    <div class="ring-wrap-rel">
+                        <svg width="90" height="90" viewBox="0 0 90 90">
+                            <circle class="ring-track" cx="45" cy="45" r="40" stroke-width="7"/>
+                            <circle class="ring-fill" cx="45" cy="45" r="40" stroke-width="7" transform="rotate(-90 45 45)"/>
+                        </svg>
+                        <div class="ring-center">
+                            <div class="ring-score">85</div>
+                            <div class="ring-sub">/ 100</div>
+                        </div>
+                    </div>
+                    <div class="trust-breakdown">
+                        <div class="tb-row">
+                            <div class="tb-label">Profile verify</div>
+                            <div class="tb-bar-wrap"><div class="tb-bar" style="width:92%"></div></div>
+                            <div class="tb-val">92</div>
+                        </div>
+                        <div class="tb-row">
+                            <div class="tb-label">Campaign hist.</div>
+                            <div class="tb-bar-wrap"><div class="tb-bar" style="width:78%"></div></div>
+                            <div class="tb-val">78</div>
+                        </div>
+                        <div class="tb-row">
+                            <div class="tb-label">Community</div>
+                            <div class="tb-bar-wrap"><div class="tb-bar" style="width:85%"></div></div>
+                            <div class="tb-val">85</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mini Campaign -->
+            <div class="mini-card">
+                <div class="mini-icon" style="background:#EEEEFF">🚀</div>
+                <div class="mini-info">
+                    <div class="mini-name">AgroSense — AI Crop Monitor</div>
+                    <div class="mini-prog-wrap"><div class="mini-prog" style="width:73%"></div></div>
+                    <div class="mini-meta">
+                        <span>₹73,000 of ₹1,00,000</span>
+                        <strong>✓ Verified</strong>
+                    </div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:5px;align-items:flex-end">
+                    <span class="chip-ai">AI-Written</span>
+                    <span class="chip-clean">Clean</span>
+                </div>
+            </div>
+
+            <!-- AI assist -->
+            <div class="mini-card">
+                <div class="mini-icon" style="background:var(--accent-lt)">✨</div>
+                <div class="mini-info">
+                    <div style="font-size:12px;color:var(--muted);font-weight:500;margin-bottom:5px">AI just enhanced your description</div>
+                    <div style="font-size:13px;color:var(--text);line-height:1.5;">"...empowers rural farmers with real-time crop health insights using computer vision."</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SCROLLING TICKER -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <div class="ticker-content">
+                🚀 Support Innovation &nbsp;•&nbsp; 💡 Fund Creative Ideas &nbsp;•&nbsp; 🌍 Make a Difference &nbsp;•&nbsp; ✨ Join the Movement &nbsp;•&nbsp; 🎯 Back Projects You Love &nbsp;•&nbsp; 🤝 Community Powered &nbsp;•&nbsp; 📈 Transparent Funding &nbsp;•&nbsp; 💰 Every Rupee Counts &nbsp;•&nbsp;
+            </div>
+            <div class="ticker-content">
+                🚀 Support Innovation &nbsp;•&nbsp; 💡 Fund Creative Ideas &nbsp;•&nbsp; 🌍 Make a Difference &nbsp;•&nbsp; ✨ Join the Movement &nbsp;•&nbsp; 🎯 Back Projects You Love &nbsp;•&nbsp; 🤝 Community Powered &nbsp;•&nbsp; 📈 Transparent Funding &nbsp;•&nbsp; 💰 Every Rupee Counts &nbsp;•&nbsp;
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <div class="container">
+            <h2>What is CrowdFunding?</h2>
+            <p>CrowdFunding is a simple platform where anyone can share their creative ideas and get funding from
+                supporters around the world. Whether it's education, technology, health, or social impact — every idea
+                deserves a chance to come to life.</p>
+        </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose CrowdFunding?</h2>
+                <p>Simple, secure, and built for everyone.</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Easy to Use</h3>
+                    <p>Create a campaign in minutes with our simple and intuitive platform.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure</h3>
+                    <p>Your data and transactions are safe with industry-standard security.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Community Driven</h3>
+                    <p>Powered by real people who believe in supporting great ideas.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Transparent</h3>
+                    <p>Track every campaign's progress with real-time updates and reports.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED CAMPAIGNS -->
+    <section class="featured-campaigns">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Campaigns</h2>
+                <p>Discover projects that need your support.</p>
+            </div>
+
+            <div class="campaigns-grid">
+                <!-- Campaign 1 -->
+                <div class="campaign-card">
+                    <div class="card-image">
+                        <img src="images/ai-study.png" alt="AI Study Assistant">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Education</span>
+                        <h3>AI Study Assistant</h3>
+                        <p>Building an AI-powered study tool to help students learn smarter and faster.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 72%;"></div>
+                        </div>
+                        <div class="card-stats">
+                            <span><strong>₹3,60,000</strong> raised</span>
+                            <span>Goal: ₹5,00,000</span>
+                        </div>
+                        <a href="campaigns.html" class="btn btn-outline">View Campaign</a>
+                    </div>
+                </div>
+
+                <!-- Campaign 2 -->
+                <div class="campaign-card">
+                    <div class="card-image">
+                        <img src="images/health-monitor.png" alt="Smart Health Monitor">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Healthcare</span>
+                        <h3>Smart Health Monitor</h3>
+                        <p>A wearable device that tracks vitals and alerts users about potential health risks.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%;"></div>
+                        </div>
+                        <div class="card-stats">
+                            <span><strong>₹2,25,000</strong> raised</span>
+                            <span>Goal: ₹5,00,000</span>
+                        </div>
+                        <a href="campaigns.html" class="btn btn-outline">View Campaign</a>
+                    </div>
+                </div>
+
+                <!-- Campaign 3 -->
+                <div class="campaign-card">
+                    <div class="card-image">
+                        <img src="images/clean-water.png" alt="Clean Water Initiative">
+                    </div>
+                    <div class="card-body">
+                        <span class="card-category">Environment</span>
+                        <h3>Clean Water Initiative</h3>
+                        <p>Providing clean and safe drinking water to rural communities across India.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 88%;"></div>
+                        </div>
+                        <div class="card-stats">
+                            <span><strong>₹4,40,000</strong> raised</span>
+                            <span>Goal: ₹5,00,000</span>
+                        </div>
+                        <a href="campaigns.html" class="btn btn-outline">View Campaign</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Crowd<span>Funding</span></div>
+                    <p>A simple crowdfunding platform to support innovative ideas and creative projects.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="campaigns.html">Campaigns</a></li>
+                        <li><a href="create-campaign.html">Create Campaign</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">contact@crowdfunding.com</a></li>
+                        <li><a href="#">+91 98765 43210</a></li>
+                        <li><a href="#">New Delhi, India</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 CrowdFunding. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

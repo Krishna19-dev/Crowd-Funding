@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Login to your CrowdFunding account to manage and support crowdfunding campaigns.">
+    <title>Login - CrowdFunding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--  NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Crowd<span>Funding</span></a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="campaigns.html">Campaigns</a></li>
+                <li><a href="create-campaign.html">Create Campaign</a></li>
+                <li><a href="login.html" class="btn btn-primary active">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER-->
+    <section class="page-header">
+        <div class="container">
+            <h1>Welcome Back</h1>
+            <p>Login to your CrowdFunding account.</p>
+        </div>
+    </section>
+
+    <!-- LOGIN FORM -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+
+                <form id="loginForm">
+                    <h2>Login</h2>
+                    <p>Enter your credentials to continue.</p>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" id="loginEmail" placeholder="you@example.com">
+                    </div>
+
+                    <!-- Password -->
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter your password">
+                    </div>
+
+                    <!-- Login Button -->
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+
+                <!-- Extra Links -->
+                <div class="login-extras">
+                    <p>Don't have an account? <a href="dashboard.html">Sign Up</a></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  FOOTER-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Crowd<span>Funding</span></div>
+                    <p>A simple crowdfunding platform to support innovative ideas and creative projects.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="campaigns.html">Campaigns</a></li>
+                        <li><a href="create-campaign.html">Create Campaign</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">contact@crowdfunding.com</a></li>
+                        <li><a href="#">+91 98765 43210</a></li>
+                        <li><a href="#">New Delhi, India</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 CrowdFunding. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="User dashboard on CrowdFunding to track backed projects and active campaigns.">
+    <title>My Dashboard - CrowdFunding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================
+         NAVBAR
+         ======================== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Crowd<span>Funding</span></a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="campaigns.html">Campaigns</a></li>
+                <li><a href="create-campaign.html">Create Campaign</a></li>
+                <!-- Profile Avatar instead of Login button -->
+                <li><a href="dashboard.html" class="nav-profile-link active">
+                        <div class="nav-avatar">JD</div>
+                        <span class="nav-username">John Doe</span>
+                    </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- DASHBOARD HEADER-->
+    <section class="dashboard-header">
+        <div class="container">
+            <div class="dashboard-profile">
+                <div class="profile-avatar-large">JD</div>
+                <div class="profile-info">
+                    <h1>Welcome back, Krishna!</h1>
+                    <p>Manage your campaigns and backed projects.</p>
+                </div>
+            </div>
+
+            <div class="dashboard-stats">
+                <div class="d-stat-card">
+                    <div class="d-stat-value">₹24,500</div>
+                    <div class="d-stat-label">Total Backed</div>
+                </div>
+                <div class="d-stat-card">
+                    <div class="d-stat-value">3</div>
+                    <div class="d-stat-label">Projects Supported</div>
+                </div>
+                <div class="d-stat-card">
+                    <div class="d-stat-value">1</div>
+                    <div class="d-stat-label">My Campaigns</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DASHBOARD CONTENT -->
+    <section class="dashboard-content">
+        <div class="container">
+
+            <!-- My Campaigns Section -->
+            <div class="dashboard-section">
+                <div class="dashboard-section-header">
+                    <h2>My Campaigns</h2>
+                    <a href="create-campaign.html" class="btn btn-primary btn-sm">+ New Campaign</a>
+                </div>
+
+                <div class="campaigns-grid">
+                    <!-- Campaign Card -->
+                    <div class="campaign-card">
+                        <div class="campaign-image">
+                            <img src="images/robotics-lab.png" alt="Robotics Lab">
+                            <span class="category-badge">Education</span>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Robotics Lab for Kids</h3>
+                            <p class="author">By John Doe</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%;"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <div class="stat">
+                                    <strong>₹45,000</strong>
+                                    <span>raised</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>45%</strong>
+                                    <span>of ₹100,000</span>
+                                </div>
+                            </div>
+                            <div class="dashboard-card-actions">
+                                <button class="btn btn-outline btn-sm">Edit</button>
+                                <button class="btn btn-outline btn-sm">Updates</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backed Projects Section -->
+            <div class="dashboard-section">
+                <div class="dashboard-section-header">
+                    <h2>Backed Projects</h2>
+                </div>
+
+                <div class="campaigns-grid">
+                    <!-- Campaign Card -->
+                    <div class="campaign-card">
+                        <div class="campaign-image">
+                            <img src="images/clean-water.png" alt="Clean Water">
+                            <span class="category-badge">Environment</span>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Clean Water Initiative</h3>
+                            <p class="author">By Sarah Jenkins</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%;"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <div class="stat">
+                                    <strong>₹800,000</strong>
+                                    <span>raised</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>80%</strong>
+                                    <span>of ₹1,000,000</span>
+                                </div>
+                            </div>
+                            <div class="backed-amount">
+                                You backed: <strong>₹5,000</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Campaign Card -->
+                    <div class="campaign-card">
+                        <div class="campaign-image">
+                            <img src="images/health-monitor.png" alt="Health Monitor">
+                            <span class="category-badge">Health</span>
+                        </div>
+                        <div class="campaign-content">
+                            <h3>Smart Health Monitor</h3>
+                            <p class="author">By MedTech Innovators</p>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%;"></div>
+                            </div>
+                            <div class="campaign-stats">
+                                <div class="stat">
+                                    <strong>₹250,000</strong>
+                                    <span>raised</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>100%</strong>
+                                    <span>Funded</span>
+                                </div>
+                            </div>
+                            <div class="backed-amount success-text">
+                                You backed: <strong>₹19,500</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">Crowd<span>Funding</span></div>
+                    <p>A simple crowdfunding platform to support innovative ideas and creative projects.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="campaigns.html">Campaigns</a></li>
+                        <li><a href="create-campaign.html">Create Campaign</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="#">contact@crowdfunding.com</a></li>
+                        <li><a href="#">+91 98765 43210</a></li>
+                        <li><a href="#">New Delhi, India</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 CrowdFunding. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
